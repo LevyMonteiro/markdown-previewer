@@ -3,8 +3,8 @@ import { marked } from 'marked';
 import './App.css';
 
 function App() {
-  const [text, setText] = useState(`
-  # Welcome to my React Markdown Previewer!
+  const [text, setText] = useState(
+  `# Welcome to my React Markdown Previewer!
 
   ## This is a sub-heading...
   ### And here's some other cool stuff:
@@ -46,8 +46,8 @@ function App() {
   1. Use just 1s if you want!
   1. And last but not least, let's not forget embedded images:
 
-  ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
-  `)
+  ![markdown Logo](https://cdn.worldvectorlogo.com/logos/markdown.svg)`
+  )
 
   marked.setOptions({
     breaks: true
