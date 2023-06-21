@@ -46,8 +46,32 @@ function App() {
   1. Use just 1s if you want!
   1. And last but not least, let's not forget embedded images:
 
-  ![markdown Logo](https://cdn.worldvectorlogo.com/logos/markdown.svg)`
+  <img src="https://cdn.worldvectorlogo.com/logos/markdown.svg" alt="Markdown logo" width="350" height="200"/>`
   )
+
+  // maximize and hide elements 
+  const [editorClass, setEditorClass] = useState('');
+  const [previewClass, setPreviewClass] = useState('');
+
+  const handleMaximizeEditor = () => {
+    if (editorClass === 'maximized') {
+      setEditorClass('');
+      setPreviewClass('');
+    } else {
+      setEditorClass('maximized');
+      setPreviewClass('hide');
+    }
+  };
+
+  const handleMaximizePreviewer = () => {
+    if (previewClass === 'maximized') {
+      setPreviewClass('');
+      setEditorClass('');
+    } else {
+      setPreviewClass('maximized');
+      setEditorClass('hide');
+    }
+  };
 
   marked.setOptions({
     breaks: true
@@ -55,13 +79,32 @@ function App() {
 
   return (
     <div className="App">
-      <textarea id='editor' onChange={(event) => setText(event.target.value)} value={text}></textarea>
-      <div 
-        id='preview'
-        dangerouslySetInnerHTML={{
-          __html: marked(text)
-        }}
-        ></div>
+      
+      <div className={`editorWraper ${editorClass}`}>
+        <div className='elementHeader'>
+          Editor 
+          <i onClick={handleMaximizeEditor} className={editorClass === 'maximized' ? "fa fa-compress" : 'fa fa-arrows-alt'}></i>
+        </div>
+          <textarea 
+            id='editor' 
+            onChange={(event) => setText(event.target.value)} 
+            value={text}
+          ></textarea>
+      </div>
+
+      <div id='previewWraper' className={`${previewClass}`}>
+        <div className='elementHeader'>
+          Preview 
+          <i onClick={handleMaximizePreviewer} className={previewClass === 'maximized' ? 'fa fa-compress' : "fa fa-arrows-alt"}></i>
+        </div>
+        <div 
+          id='preview'
+          dangerouslySetInnerHTML={{
+            __html: marked(text)
+          }}
+          ></div>
+      </div>
+
     </div>
   );
 }
