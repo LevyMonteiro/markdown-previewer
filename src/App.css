@@ -9,15 +9,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  background-color: #87b5b5;
 }
 
-.elementHeader {
+.toolbar {
   height: 30px;
   display: flex;
   align-items: center;
   padding: 5px 10px;
   border: 1px solid black;
+  border-bottom: 0;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  background-color: #4aa3a3;
 }
 
 i {
@@ -25,18 +28,29 @@ i {
 }
 
 .editorWraper {
+  margin: 30px auto 0px;
   height: 200px;
 }
 
 #editor {
   width: 600px;
   padding: 5px;
-  height: calc(100% - 30px)
+  height: calc(100% - 30px);
+  background-color: #c0d8d8;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  border: 1px solid black;
+}
+
+.previewWraper {
+  margin: 30px auto;
 }
 
 #preview {
   border: 1px solid black;
   padding: 5px;
+  width: 800px;
+  background-color: #c0d8d8;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
 }
 
 .maximized {
@@ -45,4 +59,22 @@ i {
 
 .hide {
   display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#github {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  transform: scale(0.9);
+}
+
+#github:hover {
+  transform: scale(1);
+  margin-left: 2px;
 }

@@ -81,7 +81,7 @@ function App() {
     <div className="App">
       
       <div className={`editorWraper ${editorClass}`}>
-        <div className='elementHeader'>
+        <div className='toolbar'>
           Editor 
           <i onClick={handleMaximizeEditor} className={editorClass === 'maximized' ? "fa fa-compress" : 'fa fa-arrows-alt'}></i>
         </div>
@@ -92,8 +92,8 @@ function App() {
           ></textarea>
       </div>
 
-      <div id='previewWraper' className={`${previewClass}`}>
-        <div className='elementHeader'>
+      <div className={`previewWraper ${previewClass}`}>
+        <div className='toolbar'>
           Preview 
           <i onClick={handleMaximizePreviewer} className={previewClass === 'maximized' ? 'fa fa-compress' : "fa fa-arrows-alt"}></i>
         </div>
@@ -104,6 +104,8 @@ function App() {
           }}
           ></div>
       </div>
+
+      <footer>by <a id='github' href='https://github.com/levymonteiro' target='_blank' rel='noreferrer'>Levy Monteiro</a></footer>
 
     </div>
   );
