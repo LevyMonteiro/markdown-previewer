@@ -64,11 +64,9 @@ function App() {
   };
 
   const handleMaximizePreviewer = () => {
-    if (previewClass === 'maximized') {
-      setPreviewClass('');
+    if (editorClass === 'hide') {
       setEditorClass('');
     } else {
-      setPreviewClass('maximized');
       setEditorClass('hide');
     }
   };
