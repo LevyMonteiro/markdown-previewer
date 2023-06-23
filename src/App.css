@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +8,7 @@
 
 .App {
   width: 100%;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +24,7 @@
   border-bottom: 0;
   box-shadow: 1px 1px 10px 2px #3a5f5f;
   background-color: #4aa3a3;
+  font-family: 'Bitter', serif;
 }
 
 i {
@@ -42,7 +46,8 @@ i {
 }
 
 .previewWraper {
-  margin: 30px auto;
+  margin: auto;
+  margin-top: 30px;
 }
 
 #preview {
@@ -51,6 +56,10 @@ i {
   width: 800px;
   background-color: #c0d8d8;
   box-shadow: 1px 1px 10px 2px #3a5f5f;
+}
+
+#preview * {
+  margin: 15px 0px;
 }
 
 .maximized {
@@ -64,7 +73,7 @@ i {
 footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 #github {
