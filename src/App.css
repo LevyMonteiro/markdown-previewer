@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  line-height: 1.5;
+  color: #212529;
+}
+
 .App {
   width: 100%;
   overflow: auto;
@@ -38,7 +43,7 @@ i {
 
 #editor {
   width: 600px;
-  padding: 5px;
+  padding: 8px;
   height: calc(100% - 30px);
   background-color: #c0d8d8;
   box-shadow: 1px 1px 10px 2px #3a5f5f;
@@ -52,7 +57,7 @@ i {
 
 #preview {
   border: 1px solid black;
-  padding: 5px;
+  padding: 16px;
   width: 800px;
   background-color: #c0d8d8;
   box-shadow: 1px 1px 10px 2px #3a5f5f;
@@ -60,6 +65,55 @@ i {
 
 #preview * {
   margin: 15px 0px;
+}
+
+#preview h1 {
+  border-bottom: 2px solid #224b4b;
+}
+
+#preview h2 {
+  border-bottom: 1px solid #224b4b;
+}
+
+#preview p code {
+  background-color: white;
+  padding: 4px;
+}
+
+#preview pre {
+  background-color: white;
+  padding: 4px;
+
+}
+
+#preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#preview table {
+  border-collapse: collapse;
+}
+
+#preview td, #preview th {
+  border: 2px solid #224b4b;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#preview ul, #preview ol {
+  padding-left: 36px;
+}
+
+#preview ul, #preview li {
+  margin: 0;
+}
+
+#preview img {
+  display: flex;
+  margin: 0 auto;
 }
 
 .maximized {
@@ -73,6 +127,7 @@ i {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 30px 0;
 }
 

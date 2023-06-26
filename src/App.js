@@ -46,7 +46,7 @@ function App() {
   1. Use just 1s if you want!
   1. And last but not least, let's not forget embedded images:
 
-  <img src="https://cdn.worldvectorlogo.com/logos/markdown.svg" alt="Markdown logo" width="350" height="200"/>`
+  <img src="https://cdn.worldvectorlogo.com/logos/markdown.svg" alt="Markdown logo" width="320" height="200"/>`
   )
 
   // maximize and hide elements 
