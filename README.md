@@ -1,6 +1,13 @@
 # Random Quote Machine
 This is an app that allows you to write you code on the editor, it is converted to you see how it looks on the markdown format.
 
+## Demo
+Check out a short video demonstrating the app in action:
+
+
+https://github.com/LevyMonteiro/markdown-previewer/assets/102385102/f2906780-4c5c-45f3-8b02-535aeb122c5c
+
+
 ## Getting Started
 To view the website, simply visit the live URL <a href="https://markdown-previewer-levymonteiro.vercel.app/" target="_blank">here</a>.
 
