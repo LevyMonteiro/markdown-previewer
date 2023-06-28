@@ -83,7 +83,7 @@ i {
 #preview pre {
   background-color: white;
   padding: 4px;
-
+  overflow-x: auto;
 }
 
 #preview blockquote {
@@ -114,6 +114,7 @@ i {
 #preview img {
   display: flex;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .maximized {
@@ -141,4 +142,20 @@ footer {
 #github:hover {
   transform: scale(1);
   margin-left: 2px;
+}
+
+@media (max-width: 900px) {
+  .editorWraper, #editor {
+    width: 65vw;
+  }
+
+  .previewWraper, #preview {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 420px) {
+  #preview ul, #preview ol {
+    padding-left: 20px;
+  }
 }
