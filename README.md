@@ -14,7 +14,7 @@ To view the website, simply visit the live URL <a href="https://markdown-preview
 If you'd like to run the website locally on your machine, you can do so by following these steps:
 <ol>
 <li>Clone the repository to your local machine using <code>git clone https://github.com/LevyMonteiro/markdown-previewer.git</code>.</li>
-<li>Change to directory using <code>cd random-machine-quote</code>.</li>
+<li>Change to directory using <code>cd markdown-previewer</code>.</li>
 <li>Run using <code>npm start</code>.</li>
 </ol>
 
